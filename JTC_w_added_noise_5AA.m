@@ -6,7 +6,7 @@
 %% Linear 5 Antenna Array - Simulated Data for Neural Network         %%%%
 %% Author: Victor Madrid & Tate Harsch-Hudspeth                       %%%%
 %% Last Edit Made: 03/30/2021                                         %%%%
-%% University: Sonoma State University                                %%%% 
+%% University: Sonoma State University                                %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -137,12 +137,12 @@ for u=(1:length(d))
     total_loss = [total_loss,ploss];
 end
 
-prx = ptx - total_loss; % Tx pwer - loss = Rx power
+prx = ptx - total_loss; % Tx power - loss = Rx power
 prx = 1000 * (10.^(prx./10)); % Convert from dBm to Watts
 %pre_noise_prx = prx;
 
 % Adding Noise:
-% Below we add a realistic amount of white gaussian noise
+% Below we add a realistic amount of white gaussian noise:
 nfl = .00001; % Noise floor low power in Watts ~ -50 dB
 nfh = .0001; % Noise floor high power in Watts ~ -40 dB
 noise_len = length(d);
@@ -174,7 +174,7 @@ end
  
 % Shaping the array in preperation for the Neural Network:
 % We want a 10 column tensor with the first 8 consisting of inputs and the
-% last two consisitng of (x,y) or (r,theta).
+% last 2 consisitng of (x,y) or (r,theta).
 power_phase_len = length(x);
 power_phase = reshape([prx;relative_phase], size(prx,1), []);
 power_phase = reshape(power_phase,[8,power_phase_len]);

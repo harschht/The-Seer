@@ -6,7 +6,7 @@
 %% 3 Antenna Array, Power Only - Simulated Data for Neural Network    %%%%
 %% Author: Victor Madrid & Tate Harsch-Hudspeth                       %%%%
 %% Last Edit Made: 04/14/2021                                         %%%%
-%% University: Sonoma State University                                %%%% 
+%% University: Sonoma State University                                %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -133,7 +133,7 @@ prx = 1000 * (10.^(prx./10)); % Convert from dBm to Watts
 %pre_noise_prx = prx;
 
 % Adding Noise:
-% Below we add a realistic amount of white gaussian noise
+% Below we add a realistic amount of white gaussian noise:
 nfl = .00001; % Noise floor low power in Watts ~ -50 dB
 nfh = .0001; % Noise floor high power in Watts ~ -40 dB
 noise_len = length(d);
@@ -155,7 +155,7 @@ end
 
 % Shaping the array in preperation for the Neural Network:
 % We want a 5 column tensor with the first 3 consisting of inputs and the
-% last two consisitng of (x,y) or (r,theta). Although uncecessary in this
+% last 2 consisitng of (x,y) or (r,theta). Although uncecessary in this
 % simulation, we leave the structure in case one would need to reintroduce
 % the relative phase difference.
 prx_len = length(pre_prx);
