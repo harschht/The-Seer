@@ -55,7 +55,7 @@ GUI.py
 
 
 Acknowledgments:
-	We would like to thank the entire Department of Engineering Science at Sonoma State University for their support over the years. A special thanks to our advisors Dr. Mohamed Salem and Joe Reid for their endless help and support throughout the senior design process. We would also like to thank Dr. Donald Estreich, Andrew Choi, Roger Nichols, Stan Bischof and Enrique Zeiger for their time and guidance. Lastly, we would like to thank the Office of Research & Sponsored Programs and the Koret Foundation for funding our project.
+	We would like to thank the entire Department of Engineering Science at Sonoma State University for their support over the years. A special thanks to our advisors Dr. Mohamed Salem and Joe Reid for their endless help and support throughout the senior design process. We would also like to thank Dr. Donald Estreich, Andrew Choi, Roger Nichols, Stan Bischof, and Enrique Zeiger for their time and guidance. Lastly, we would like to thank the Office of Research & Sponsored Programs and the Koret Foundation for funding our project.
 
 
 Abstract:
